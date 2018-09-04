@@ -40,7 +40,7 @@ for key in keys:
 
 dict['element_length'] = l
 
-for key in sorted(dict.iterkeys()):
-    print ("%s: %s" % (key, dict[key]))
-
 #Sorting is pending
+OrderedDict(sorted(dict.items(), key=lambda t: t[0]))
+#giving the following error: '<' not supported between instances of 'str' and 'int'
+#tried a couple of other things but still giving the same error
